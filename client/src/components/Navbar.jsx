@@ -13,7 +13,7 @@ const AppNavbar = () => {
   return (
     <>
       <Navbar bg='dark' variant='dark' expand='lg'>
-        <Container fluid>
+        <Container>
           <Navbar.Brand as={Link} to='/'>
             Google Books Search
           </Navbar.Brand>
@@ -40,7 +40,7 @@ const AppNavbar = () => {
       </Navbar>
       {/* set modal data up */}
       <Modal
-        size='lg'
+        size='md'
         show={showModal}
         onHide={() => setShowModal(false)}
         aria-labelledby='signup-modal'>
@@ -48,12 +48,12 @@ const AppNavbar = () => {
         <Tab.Container defaultActiveKey='login'>
           <Modal.Header closeButton>
             <Modal.Title id='signup-modal'>
-              <Nav variant='pills'>
+              <Nav variant='underline'>
                 <Nav.Item>
                   <Nav.Link eventKey='login'>Login</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey='signup'>Sign Up</Nav.Link>
+                  <Nav.Link eventKey='signup'>Register</Nav.Link>
                 </Nav.Item>
               </Nav>
             </Modal.Title>
